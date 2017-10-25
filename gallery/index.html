@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewpor" content="device-width=width">
+	<title>intern online-task|schoolguru</title>
+
+	<style>
+	body{
+		background-image: url('img/0.jpeg');
+		-webkit-background-size: cover;
+		background-size: cover;
+
+	}
+		.container{
+			padding-top: 35px;
+		}
+		h1{
+			padding-top: 15px;
+			display: block;
+			font-family: sans-serif;
+			font-style: italic;
+			text-decoration: underline;
+			}
+		section{
+			padding-top: 20px;
+		}
+		.main{
+			float: right;
+			padding-top: 25px;
+		}
+
+	</style>
+
+
+
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="lightbox2/css/lightbox.css">
+
+</head>
+<body>
+	<div class="container">
+			<section>
+				<div class="main">
+				
+					<input type="text" placeholder="name of image..">
+
+					<button type="button" name="search" onclick="doSearch(this.form.query);" class="btn btn-success glyphicon glyphicon-search">search</button>
+				
+			</div>
+		<h1 style="color: white;">School-guru Internship online task</h1>
+		<div class="gallery" style="padding-top:20px;">
+			<div class="row">
+				<div class="col-lg-3">
+					<a href="img/1.jpeg" data-title="Qutub Minar" data-lightbox="Incredible India">
+						<img src="img/1.jpeg" width="200px" class="img-thumbnail"
+						alt="Qutub minar"/>
+					</a>
+				</div>
+
+
+					<div class="col-lg-3">
+						<a href="img/2.jpeg" data-title="Aarti" data-lightbox="Incredible India">
+							<img src="img/2.jpeg" width="140px" style="margin-left:30px;" class="img-thumbnail"
+							alt="Aarti"/>
+						</a>
+					</div>
+
+
+					<div class="col-lg-3">
+						<a href="img/3.jpeg" data-title="Buddha" data-lightbox="Incredible India">
+							<img src="img/3.jpeg" width="200px" class="img-thumbnail"
+							alt="Buddha"/>
+						</a>
+					</div>
+
+					
+					<div class="col-lg-3">
+						<a href="img/4.jpeg" data-title="Indian Flag" data-lightbox="Incredible India">
+							<img src="img/4.jpeg" width="200px" class="img-thumbnail"
+							alt="Indian flag"/>
+						</a>
+					</div>
+				</div>	
+			</section>	
+			<section>
+				<div class="row">
+					<div class="col-lg-3">
+						<a href="img/5.jpeg" data-title="Ancient indian art" data-lightbox="Incredible India">
+							<img src="img/5.jpeg" width="200px" class="img-thumbnail"
+							alt="Ancient indian art"/>
+						</a>
+					</div>
+
+
+					<div class="col-lg-3">
+						<a href="img/6.jpeg" data-title="Golden temple" data-lightbox="Incredible India">
+							<img src="img/6.jpeg" width="200px" class="img-thumbnail"
+							alt="Golden temple"/>
+						</a>
+					</div>
+
+
+					<div class="col-lg-3">
+						<a href="img/7.jpeg" data-title="Gateway of india" data-lightbox="Incredible India">
+							<img src="img/7.jpeg" width="200px" class="img-thumbnail"
+							alt="Gateway of india"/>
+						</a>
+					</div>
+			</div>
+		</section>
+		</div>
+	</div>
+
+	<script>
+	function doSearch (s) {
+		openDbRelativeURL("All?SearchView&Query=" + s.value);
+	}
+
+	</script>
+	<script src="jquery/jquery-3.2.1.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="lightbox2/js/lightbox.min.js"></script>	
+</body>
+</html>
